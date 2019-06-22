@@ -1,0 +1,111 @@
+<html> 
+	<head>
+		<link type="text/css" rel="stylesheet" href="main.css" />
+		<title> I LIKE TO SLEEP </title>
+		<script>
+function banner(){ 
+var text = confirm("Did You Really Want to Click on My Nose? It Hurt!"); 
+return text; 
+} 
+
+function answer(){ 
+	var radio = document.getElementsByName("trivia");
+	var selection = false;
+	var message = ""; 
+	for( var i = 0; i < radio.length; i++) {
+		if(radio[i].value == "yes" && radio[i].checked == true) { 
+		selection = true; 
+		}
+	}
+
+if(selection == true) {
+message = message + "<b><p style='color:green'>wow to go!</p></b>"; 
+} else { 
+message = message + "<b><p style='color:red'>not correct.</p></b>"; 
+}
+document.getElementById("response").innerHTML = message;
+
+}
+</script> 
+	</head> 
+	<body id="background">
+		<a onclick="return banner()" href="https://simplystem.com">
+
+		<header id="banner"> i <span class="wrap-text">like</span> to sleep </header>
+
+	</a>
+					 <form>
+					 
+		<nav>
+			 	<ul id="navmenu">
+			 		<li class="navitems"> <a href="index.html">Home</a> </li>
+					<li class="navitems"> <a href="games.html">Games</a> </li>
+					<li class="navitems"> <a href="videos.html">Videos</a> </li>
+			 	</ul>
+			 </nav>
+			 <div class="rightside">
+	<center> 
+				<video width="400" height="220" controls autoplay>
+		<source src="http://www.w3schools.com/HTML/mov_bbb.mp4" type="video/mp4">
+		<source src="http://www.w3schools.com/HTML/mov_bbb.ogg" type="video/ogg">
+		Your browser does not support HTML5 video.
+		</video>
+	
+		<img width="60%" src="https://images.stockfreeimages.com/49/sfi226w/491599.jpg" />
+		<img width="60%" src="https://thumbs.dreamstime.com/t/dolphin-show-acrobatic-jumps-32758637.jpg"/>
+		<hr />
+	</center>
+
+		 </div> <!-- closing rightside div tag -->
+
+			 <div class="leftside">
+				
+						<h1> sleep is fun </h1>
+						<p>i <b>love</b> to sleep. sleep is <u>fun</u>. you need sleep to <i>live</i>.</p>
+
+						<div class="wrap-list">
+						<ol>
+							<li class="listitem"> Sleep </li>
+							<li class="listitem"> Is </li>
+							<li class="listitem"> Fun </li>
+						</ol> 
+						</div>
+
+					
+					</form>
+
+					<div class="wrap-trivia">  
+					<h2>Baseball Trivia Question:</h2>
+					<p>Who won the World Series in 1985?</p>
+					<form>
+						<div id="response"> </div>
+						<input type="radio" name="trivia" value="no">
+						St. Louis Cardinals<br>
+						<input type="radio" name="trivia" value="yes">
+						K.C. Royals<br>
+						<input type="radio" name="trivia" value="no">
+						S.F. Giants<br>
+						<input type="radio" name="trivia" value="no">
+						N.Y. Yankees<br>
+						<input onclick="answer()" type="button" id="submit" value="Click Here">
+					</form>
+				</div>
+
+			
+			 </div> <!-- closing leftsid div tag -->
+			 <div class="clearfloat"></div>
+
+
+		
+
+		<audio width="400" height="220" controls autoplay>
+<source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+Your browser does not support HTML 5 audio.
+</audio>
+
+		<center> kaleb <a href="https://simplystem.com/code-dungeon/">My Favorite Website</a> </center>
+
+		<footer id="footer">i made this!</footer>
+
+	</body> 
+</html>
